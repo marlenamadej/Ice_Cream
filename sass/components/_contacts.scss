@@ -1,12 +1,6 @@
 @media screen and (min-width:320px) and (max-width:767px) {
-    .section{
-        width:320px;
-    }
-    
     .container{
-        width:320px;
-        padding-left:50px;
-        padding-right:50px;
+        width:280px;
     }
     
     .contacts,
@@ -24,6 +18,8 @@
         margin:0;
         padding:43px 21px 43px 20px;
         margin-bottom:20px;
+        margin-left:50px;
+        margin-right:50px;
     }
 
     .card__list-item{
@@ -65,25 +61,36 @@
         color: #907E82;
         padding-bottom:25px;
         flex-wrap: wrap;
+        border-bottom:1px solid #E1E1E1;
     }
 
-    .card__list-days{
+    .card__list-weekday,
+    .card__list-weekend{
         font-family: 'DM Sans';
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
         line-height: 186%;
         color: #000000;
+    }
+
+    .card__list-weekday{
         padding-top:25px;
     }
 
-    .card__list-hours{
+
+    .card__list-weekday-hours,
+    .card__list-weekend-hours{
         font-family: 'DM Sans';
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
         line-height: 186%;
         color: #FFA5BA;
+    }
+
+    .card__list-weekend-hours{
+        padding-bottom:25px;
     }
 
     .card__list-phonelink,
@@ -94,5 +101,12 @@
         font-size: 12px;
         line-height: 18px;
         color: #907E82;
+        
     }
+
+    .card__list-phonelink{
+        border-top:1px solid #E1E1E1;
+        padding-top:25px;
+    }
+    
 }
