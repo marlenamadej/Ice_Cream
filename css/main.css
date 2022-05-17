@@ -2,6 +2,9 @@
   .container {
     width: 320px;
   }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .contacts,
   .card__list {
     list-style: none;
@@ -56,6 +59,7 @@
     color: #907E82;
     padding-bottom: 25px;
     flex-wrap: wrap;
+    border-bottom: 1px solid #E1E1E1;
   }
   .card__list-weekday,
   .card__list-weekend {
@@ -65,6 +69,7 @@
     font-size: 12px;
     line-height: 186%;
     color: #000000;
+    display: flex;
   }
   .card__list-weekday {
     padding-top: 25px;
@@ -79,6 +84,7 @@
     color: #FFA5BA;
   }
   .card__list-weekend-hours {
+    border-bottom: 1px solid #E1E1E1;
     padding-bottom: 25px;
   }
   .card__list-phonelink,
@@ -91,14 +97,12 @@
     color: #907E82;
     text-decoration: none;
   }
+  .card__list-phone {
+    padding-top: 25px;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .container {
-    width: 320px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
   .customer__pic {
     margin-left: 118px;
     margin-right: 117px;
@@ -111,8 +115,8 @@
     padding: 43px 66px 26px 57px;
     margin-top: 29px;
     margin-bottom: 30px;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .opinion {
     font-family: 'DM Sans';
@@ -122,6 +126,7 @@
     line-height: 255%;
     text-align: center;
     color: #000000;
+    border-bottom: 1px solid #E1E1E1;
   }
   .ellipse {
     display: flex;
