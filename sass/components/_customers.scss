@@ -1,10 +1,4 @@
 @media screen and (min-width:320px) and (max-width:767px) {
-    .container{
-        width:320px;
-        padding-left:20px;
-        padding-right:20px;
-    }
-
     .customer__pic{
         margin-left:118px;
         margin-right:117px;
@@ -18,8 +12,8 @@
         padding:43px 66px 26px 57px;
         margin-top:29px;
         margin-bottom:30px;
-        margin-left:0;
-        margin-right:0;  
+        margin-left:20px;
+        margin-right:20px;  
     }
 
     .opinion{
@@ -30,6 +24,7 @@
         line-height: 255%;
         text-align: center;
         color: #000000;
+        border-bottom:1px solid #E1E1E1;
     }
 
     .ellipse{
