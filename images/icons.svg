@@ -165,6 +165,9 @@
 <symbol id="icon-menu_24px" viewBox="0 0 48 32">
 <path d="M0 5.333v-5.333h48v5.333h-48zM0 18.667h48v-5.333h-48v5.333zM0 32h48v-5.333h-48v5.333z"></path>
 </symbol>
+<symbol id="icon-Vector-4" viewBox="0 0 2864 32">
+<path fill="none" stroke="#e1e1e1" stroke-width="16" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" style="stroke: var(--color1, #e1e1e1)" d="M0 16h2864"></path>
+</symbol>
 </defs>
 </svg>
 
