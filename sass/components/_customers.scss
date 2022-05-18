@@ -78,30 +78,33 @@
 
 @media screen and (min-width:768px) and (max-width:1199px) {
     .customer__pic{
-        margin-left:341px;
-        margin-top:80px;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:121px;
+        margin-bottom:19px;
     }
 
     .opinion__card{
         width: 620px;
         height: 164px;
         background-color: #FAFAFA;
-        padding:43px 66px 26px 57px;
-        margin-top:29px;
-        margin-bottom:30px;
+        padding:47px 80px 34px 60px;
         margin-left:auto;
-        margin-right:auto; 
+        margin-right:auto;
+        margin-bottom:24px; 
     }
 
     .opinion{
         font-family: 'DM Sans';
         font-style: normal;
         font-weight: 500;
-        font-size: 12px;
-        line-height: 255%;
+        font-size: 14px;
+        line-height: 216%;
         text-align: center;
+        letter-spacing: 0.04em;
         color: #000000;
-        border-bottom:1px solid #E1E1E1;
+        margin:0;
     }
 
     // .opinion::before{
@@ -120,6 +123,8 @@
         display:flex;
         justify-content: center;
         padding:0;
+        margin-top:0;
+        margin-bottom:14px;
     }
 
     .ellipse__item{
@@ -136,6 +141,7 @@
         line-height: 186%;
         text-align: center;
         color: #000000;
+        margin-bottom:35px;
     }
 
     .slider{
