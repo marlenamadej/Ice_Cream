@@ -1,6 +1,13 @@
 @media screen and (min-width:320px) and (max-width:767px) {
+    .contacts-section{
+        background-color: #FFF5F6;
+        padding-bottom:113px;
+    }
+    
+    
     .contacts,
-    .card__list {
+    .card__list,
+    .contacts__information {
         list-style: none;
         padding:0;
     }
@@ -107,5 +114,46 @@
 
     .card__list-phone{
         padding-top:25px;
+    }
+
+    .information__item-dark{
+        width: 161.45px;
+        height: 44px;
+        background-color: #D41342;
+        border-radius: 22px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: #FFFFFF;
+        margin-top:54px;
+        margin-bottom:10px;
+        margin-left:59px;
+        margin-right:59px;
+    }
+
+    .information__item-light{
+        width: 161px;
+        height: 44px;
+        background-color: #ffffff;
+        border-radius: 22px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: #D41443;
+        
+        margin-left:59px;
+        margin-right:59px;
     }
 }
