@@ -168,6 +168,9 @@
 <symbol id="icon-Vector-4" viewBox="0 0 2864 32">
 <path fill="none" stroke="#e1e1e1" stroke-width="16" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" style="stroke: var(--color1, #e1e1e1)" d="M0 16h2864"></path>
 </symbol>
+<symbol id="icon-Ellipse-51" viewBox="0 0 32 32">
+<path fill="#c7133e" style="fill: var(--color1, #c7133e)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+</symbol>
 </defs>
 </svg>
 
