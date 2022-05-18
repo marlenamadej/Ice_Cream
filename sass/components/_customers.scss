@@ -28,21 +28,20 @@
     }
 
     .ellipse{
+        list-style: none;
         display:flex;
         justify-content: center;
         padding:0;
+        margin-right: 18px;
     }
 
     .ellipse__item{
-        width: 4px;
-        height: 4px;
-        border-radius: 50%;
-        color:#C7133E;
-        margin-bottom:18px;
         &:not(:last-child){
             margin-right: 10px;
         }
+        
     }
+    
 
     .author{
         font-family: 'DM Sans';
