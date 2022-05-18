@@ -172,16 +172,16 @@
   }
   .contacts__item {
     width: 220px;
-    height: 427px;
+    height: 544px;
     background-color: #ffffff;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     margin: 0;
-    padding: 43px 21px 43px 20px;
-    margin-bottom: 20px;
+    padding: 50px 44px 50px 31px;
     margin-left: 10px;
     margin-top: 10px;
     flex-basis: calc(100% / 3 - 10px);
+    margin-right: 20px;
   }
   .card__list-item--brown,
   .card__list-item--green {
@@ -370,34 +370,39 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .customer__pic {
-    margin-left: 341px;
-    margin-top: 80px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 121px;
+    margin-bottom: 19px;
   }
   .opinion__card {
     width: 620px;
     height: 164px;
     background-color: #FAFAFA;
-    padding: 43px 66px 26px 57px;
-    margin-top: 29px;
-    margin-bottom: 30px;
+    padding: 47px 80px 34px 60px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 24px;
   }
   .opinion {
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 255%;
+    font-size: 14px;
+    line-height: 216%;
     text-align: center;
+    letter-spacing: 0.04em;
     color: #000000;
-    border-bottom: 1px solid #E1E1E1;
+    margin: 0;
   }
   .ellipse {
     list-style: none;
     display: flex;
     justify-content: center;
     padding: 0;
+    margin-top: 0;
+    margin-bottom: 14px;
   }
   .ellipse__item:not(:last-child) {
     margin-right: 10px;
@@ -410,6 +415,7 @@
     line-height: 186%;
     text-align: center;
     color: #000000;
+    margin-bottom: 35px;
   }
   .slider {
     list-style: none;
