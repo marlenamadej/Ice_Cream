@@ -25,10 +25,10 @@
         margin-right:30px;
     }
 
-    .card__list-item{
+    .card__list-item--brown,
+    .card__list-item--green{
         width: 80px;
         height: 16px;
-        background-color: #F0D1A5;
         border-radius: 4px;
         font-family: 'DM Sans';
         font-style: normal;
@@ -42,6 +42,15 @@
         letter-spacing: 0.04em;
         color: #ffffff;
     }
+
+    .card__list-item--brown{
+        background-color: #F0D1A5;
+    }
+
+    .card__list-item--green{
+        background-color: #C2E297;
+    }
+
 
     .card__list-place{
         font-family: 'DM Sans';
