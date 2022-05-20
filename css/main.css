@@ -287,6 +287,7 @@
     justify-content: center;
     color: #FFFFFF;
     margin-right: 14.5px;
+    margin-left: auto;
   }
   .information__item-light {
     width: 161px;
@@ -303,6 +304,7 @@
     text-align: center;
     justify-content: center;
     color: #D41443;
+    margin-right: auto;
   }
 }
 
@@ -441,6 +443,7 @@
     justify-content: center;
     color: #FFFFFF;
     margin-right: 14.5px;
+    margin-left: auto;
   }
   .information__item-light {
     width: 161px;
@@ -457,6 +460,7 @@
     text-align: center;
     justify-content: center;
     color: #D41443;
+    margin-right: auto;
   }
 }
 
