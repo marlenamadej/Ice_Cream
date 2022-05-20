@@ -3,7 +3,6 @@
         background-color: #FFF5F6;
         padding-right:20px;
         padding-bottom:113px;
-        
     }
     
     .contacts,
@@ -27,7 +26,7 @@
         margin-right:auto;
         position: relative;
         bottom:84px;
-        left:5%
+        left: 3%;
     }
 
     .card__list-item--brown,
@@ -55,7 +54,6 @@
     .card__list-item--green{
         background-color: #C2E297;
     }
-
 
     .card__list-place{
         font-family: 'DM Sans';
@@ -90,7 +88,6 @@
         line-height: 186%;
         color: #000000;
         display: flex;
-        
     }
 
     .card__list-weekday{
@@ -175,7 +172,6 @@
         background-color: #FFF5F6 #E5E5E5;;
         background-blend-mode: normal;
         padding-bottom:113px;
-        
     }
     
     .contacts,
@@ -324,7 +320,6 @@
         justify-content: center;
         color: #FFFFFF;
         margin-right:14.5px;
-        
     }
 
     .information__item-light{
@@ -342,6 +337,178 @@
         text-align: center;
         justify-content: center;
         color: #D41443;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .contacts-section{
+        background-color: #FFF5F6 #E5E5E5;;
+        background-blend-mode: normal;
+        padding-bottom:113px;
+    }
+    
+    .contacts,
+    .card__list,
+    .contacts__information {
+        list-style: none;
+        padding:0;
+    }
+
+    .contacts{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -20px;
+    }
+
+    .contacts__item{
+        width: 100%;
+        height: auto;
+        background-color:#ffffff;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
+        margin:0;
+        padding:50px 44px 50px 31px;
+        margin-top: 20px;
+        flex-basis: calc(100% / 3 - 20px);
+        &:not(:first-child){
+            margin-left: 20px;
+        }
+    }
+
+    .card__list-item--brown,
+    .card__list-item--green{
+        width: 80px;
+        height: 16px;
+        border-radius: 4px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 186%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        letter-spacing: 0.04em;
+        color: #ffffff;
+    }
+
+    .card__list-item--brown{
+        background-color: #F0D1A5;
+    }
+
+    .card__list-item--green{
+        background-color: #C2E297;
+    }
+
+
+    .card__list-place{
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 186%;
+        letter-spacing: 0.04em;
+        color: #000000;
+        padding-top:25px;
+        padding-bottom:10px;
+    }
+
+    .card__list-place-description{
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: #907E82;
+        padding-bottom:25px;
+        flex-wrap: wrap;
+        border-bottom:1px solid #E1E1E1;
+    }
+
+    .card__list-weekday,
+    .card__list-weekend{
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 186%;
+        color: #000000;
+        display: flex;
         
+    }
+
+    .card__list-weekday{
+        padding-top:25px;
+    }
+
+    .card__list-weekday-hours,
+    .card__list-weekend-hours{
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 186%;
+        color: #FFA5BA;
+    }
+
+    .card__list-weekend-hours{
+        border-bottom:1px solid #E1E1E1;
+        padding-bottom:25px;
+    }
+
+    .card__list-phonelink,
+    .card__list-maillink{
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #907E82;
+        text-decoration: none;
+    }
+
+    .card__list-phone{
+        padding-top:25px;
+    }
+
+    .contacts__information{
+        display: flex;
+        margin-top:81px;
+    }
+
+    .information__item-dark{
+        width: 161.45px;
+        height: 44px;
+        background-color: #D41342;
+        border-radius: 22px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: #FFFFFF;
+        margin-right:14.5px;
+    }
+
+    .information__item-light{
+        width: 161px;
+        height: 44px;
+        background-color: #ffffff;
+        border-radius: 22px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: #D41443;
     }
 }
