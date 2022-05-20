@@ -17,11 +17,27 @@
 <body>
     <section class="customer-section">
         <div class="container">
-            <img class="customer__pic"
-                src="images/circle.jpg"
-                alt="woman" 
-                width="85" 
-                height="85" />
+            <div class="slideshow-container">
+        
+                <div class="mySlides fade">
+                  <img src="images/circle.jpg" alt="woman with curly hair" width="85" height="85">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="images/circle2.jpg" alt="woman in glassess" width="85" height="85">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="images/circle3.jpg" alt="woman in yellow blouse" width="85" height="85">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+            </div>
+            <div>
+                
+            </div>
             <figure class="opinion__card">
                 <p class="opinion">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
             </figure>
@@ -43,27 +59,16 @@
                 </li>
             </ul>
             <p class="author">Emily, Los Angeles</p>
-            <ul class="slider">
-                <li class="slider__item">
-                    <svg class="slider__item--home" width="12" height="12">
-                        <use href="images/icons.svg#icon-home"></use>
-                    </svg>
-                </li>
-                <li class="slider__item">
-                    <svg class="slider__item--icon" width="12" height="12">
-                        <use href="images/icons.svg#icon-ellipse"></use>
-                    </svg>
-                </li>
-                <li class="slider__item">
-                    <svg class="slider__item--icon" width="12" height="12">
-                        <use href="images/icons.svg#icon-ellipse"></use>
-                    </svg>
-                </li>
-            </ul>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
         </div>
     </section>
 
-
+        
+        
     <section class="contacts-section">
         <div class="container">
             <ul class="contacts">
@@ -121,11 +126,40 @@
             </ul>
         
             <ul class="contacts__information">
-                <button type="button" class="information__item-dark" data-menu-open>Our Locations ></button>
-                <button type="button" class="information__item-light" data-menu-open>Franchise ></button>
+                <button type="button" class="information__item-dark">Our Locations ></button>
+                <button type="button" class="information__item-light">Franchise ></button>
             </ul>
         </div>   
     </section>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
 
 </body>
 
