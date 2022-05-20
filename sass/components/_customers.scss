@@ -6,74 +6,46 @@
         margin-top:80px;
     }
 
-    .opinion__card{
-        width: 100%;
-        height: auto;
-        background-color: #FAFAFA;
-        padding:43px 66px 26px 57px;
-        margin-top:29px;
-        margin-bottom:30px;
-        margin-left:auto;
-        margin-right:auto; 
-    }
-
     .opinion{
         font-family: 'DM Sans';
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
-        line-height: 255%;
+        line-height: 30.24px;
         text-align: center;
         color: #000000;
-        border-bottom:1px solid #E1E1E1;
+        --start-color:#E1E1E1;
+        --end-color:transparent;
+        background-image: repeating-linear-gradient(
+        to top,
+        var(--start-color),
+        var(--start-color) 1px,
+        var(--end-color) 1px,
+        var(--end-color) 30.24px);
+        &__card{
+            width: 100%;
+            height: auto;
+            background-color: #FAFAFA;
+            padding:43px 66px 26px 57px;
+            margin-top:29px;
+            margin-bottom:30px;
+            margin-left:auto;
+            margin-right:auto; 
+        }
     }
-
-    .opinion::before{
-        position: relative;
-        top:30px;
-        display:block;
-        justify-content: center;
-        content:"";
-        width:100%;
-        height:1px;
-        background-color: #E1E1E1;
-    }
-
-    .opinion::after{
-        position: relative;
-        bottom:30px;
-        display:block;
-        justify-content: center;
-        content:"";
-        width:100%;
-        height:1px;
-        background-color: #E1E1E1;
-    }
-
-    // .opinion::before{
-    //     content: '';
-    //     display: inline-block;
-    //     width:54px;
-    //     height:40px;
-    // }
-
-    // .opinion::before{
-    //     background-image: url("images/cytat.png");
-    // }
 
     .ellipse{
         list-style: none;
         display:flex;
         justify-content: center;
         padding:0;
-    }
-
-    .ellipse__item{
-        &:not(:last-child){
-            margin-right: 10px;
+        &__item{
+            &:not(:last-child){
+                margin-right: 10px;
+            }
         }
     }
-    
+
     .author{
         font-family: 'DM Sans';
         font-style: normal;
@@ -84,29 +56,16 @@
         color: #000000;
     }
 
-    // .author::after{
-    //     position: relative;
-    //     top: 35px;
-    //     display:block;
-    //     justify-content: center;
-    //     content:"";
-    //     width:100%;
-    //     height:4px;
-    //     border-radius: 2px;
-    //     background-color: blue;
-    // }
-
     .slider{
         list-style: none;
         display:flex;
         justify-content: center;
         padding:0;
-    }
-
-    .slider__item{
-        margin-bottom:70px;
-        &:not(:last-child){
-            margin-right: 18px;
+        &__item{
+            margin-bottom:70px;
+            &:not(:last-child){
+                margin-right: 18px;
+            }
         }
     }
 }
@@ -120,16 +79,6 @@
         margin-bottom:19px;
     }
 
-    .opinion__card{
-        width: 100%;
-        height: 164px;
-        background-color: #FAFAFA;
-        padding:47px 80px 34px 60px;
-        margin-left:auto;
-        margin-right:auto;
-        margin-bottom:24px; 
-    }
-
     .opinion{
         font-family: 'DM Sans';
         font-style: normal;
@@ -139,19 +88,25 @@
         text-align: center;
         letter-spacing: 0.04em;
         color: #000000;
+        --start-color:#E1E1E1;
+        --end-color:transparent;
+        background-image: repeating-linear-gradient(
+        to top,
+        var(--start-color),
+        var(--start-color) 1px,
+        var(--end-color) 1px,
+        var(--end-color) 30.24px);
         margin:0;
+        &__card{
+            width: 100%;
+            height: 164px;
+            background-color: #FAFAFA;
+            padding:47px 80px 34px 60px;
+            margin-left:auto;
+            margin-right:auto;
+            margin-bottom:24px; 
+        }
     }
-
-    // .opinion::before{
-    //     content: '';
-    //     display: inline-block;
-    //     width:54px;
-    //     height:40px;
-    // }
-
-    // .opinion::before{
-    //     background-image: url("images/cytat.png");
-    // }
 
     .ellipse{
         list-style: none;
@@ -160,14 +115,13 @@
         padding:0;
         margin-top:0;
         margin-bottom:14px;
-    }
-
-    .ellipse__item{
-        &:not(:last-child){
-            margin-right: 10px;
+        &__item{
+            &:not(:last-child){
+                margin-right: 10px;
+            }
         }
     }
-    
+
     .author{
         font-family: 'DM Sans';
         font-style: normal;
@@ -184,12 +138,88 @@
         display:flex;
         justify-content: center;
         padding:0;
+        &__item{
+            margin-bottom:70px;
+            &:not(:last-child){
+                margin-right: 18px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .customer__pic{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:121px;
+        margin-bottom:19px;
     }
 
-    .slider__item{
-        margin-bottom:70px;
-        &:not(:last-child){
-            margin-right: 18px;
+    .opinion{
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 216%;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #000000;
+        --start-color:#E1E1E1;
+        --end-color:transparent;
+        background-image: repeating-linear-gradient(
+        to top,
+        var(--start-color),
+        var(--start-color) 1px,
+        var(--end-color) 1px,
+        var(--end-color) 30.24px);
+        margin:0;
+        &__card{
+            width: 100%;
+            height: 164px;
+            background-color: #FAFAFA;
+            padding:47px 80px 34px 60px;
+            margin-left:auto;
+            margin-right:auto;
+            margin-bottom:24px; 
+        }
+    }
+
+    .ellipse{
+        list-style: none;
+        display:flex;
+        justify-content: center;
+        padding:0;
+        margin-top:0;
+        margin-bottom:14px;
+        &__item{
+            &:not(:last-child){
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .author{
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 186%;
+        text-align: center;
+        color: #000000;
+        margin-bottom:35px;
+    }
+
+    .slider{
+        list-style: none;
+        display:flex;
+        justify-content: center;
+        padding:0;
+        &__item{
+            margin-bottom:70px;
+            &:not(:last-child){
+                margin-right: 18px;
+            }
         }
     }
 }
